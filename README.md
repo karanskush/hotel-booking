@@ -1,6 +1,6 @@
-# Stay Booker Pro
+# Hotel Booking
 
-Stay Booker Pro is a production-ready hotel booking website built with modern web technologies. It is designed to be a fully functional and responsive web application for hotel booking services. For the backend api checkout: [staybooker-express-api](https://github.com/iZooGooD/stay-booker-hotel-booking-express-api)
+Hotel Booking is a production-ready hotel booking website built with modern web technologies. It is designed to be a fully functional and responsive web application for hotel booking services. For the backend api checkout: [staybooker-express-api](https://github.com/iZooGooD/stay-booker-hotel-booking-express-api)
 
 ## Key Features
 
@@ -25,29 +25,25 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/iZooGooD/stay-booker-pro.git
+   git clone https://github.com/TopManager916/hotel-booking.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd stay-booker-pro
+   cd hotel-booking
    ```
 
 3. Install dependencies:
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 4. Start the development server:
 
    ```bash
    npm start
-   # or
-   yarn start
    ```
 
 The application should now be running on [http://localhost:3000](http://localhost:3000).
@@ -55,14 +51,6 @@ The application should now be running on [http://localhost:3000](http://localhos
 ## Running the Tests
 
 To ensure the reliability and stability of the application, comprehensive test suites have been written using Cypress.
-
-To run the tests:
-
-```bash
-npm test
-# or
-npx cypress open
-```
 
 This command will open the Cypress test runner, where you can execute specific tests or the entire test suite.
 
@@ -94,26 +82,5 @@ Here's how you can seamlessly incorporate it into the "Contributing" section:
 
 ## Contributing
 
-We welcome contributions to Stay Booker Pro! If you have suggestions or would like to contribute code, please feel free to create issues or submit pull requests.
-
-### Code Quality and Linting
-
-As part of our commitment to maintain high code quality, we use ESLint for linting. Before submitting a Pull Request or committing any changes, please ensure you run the following command:
-
-```bash
-npm run lint-fix
-```
-
-This will automatically fix many common linting errors. If there are errors that can't be auto-fixed, ESLint will report them, and you should manually address these issues. Maintaining a consistent coding standard is crucial for the project.
-
-If you need to bypass the linting check in a special case, you can use the `-n` parameter with `git commit`. However, we strongly advise against skipping lint checks as it can compromise code quality:
-
-```bash
-git commit -m "Your commit message" -n
-```
-
-## Future Scope
-
-- Backend integration with Express.js for a complete full-stack experience.
-- Additional features and improvements to the booking process.
+We welcome contributions to Hotel Booking Website! If you have suggestions or would like to contribute code, please feel free to create issues or submit pull requests.
 
