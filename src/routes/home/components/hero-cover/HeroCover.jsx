@@ -43,7 +43,7 @@ const HeroCover = (props) => {
   return (
     <div className="relative h-[400px] min-h-[400px] w-full text-slate-100 mb-8 overflow-hidden rounded-b-lg">
       {/* Carousel Background */}
-      <div className="absolute inset-0 h-full w-full">
+      <div className="absolute inset-0 h-full w-full pointer-events-auto">
         <Carousel 
           images={heroImages}
           autoPlay={true}
@@ -52,10 +52,10 @@ const HeroCover = (props) => {
       </div>
       
       {/* Overlay */}
-      <div className="absolute inset-0 h-full w-full bg-black/50" />
+      <div className="absolute inset-0 h-full w-full bg-black/50 pointer-events-none" />
       
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full container mx-auto px-2 md:px-0">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full container mx-auto px-2 md:px-0 pointer-events-auto">
         <div className="hero-content__text py-4 text-center">
           <h3 className="text-4xl font-medium">
             Discover your perfect stay around the globe
