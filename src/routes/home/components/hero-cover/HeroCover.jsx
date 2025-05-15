@@ -35,9 +35,12 @@ const HeroCover = (props) => {
 
   // Sample images for the carousel - replace these with your actual hotel images
   const heroImages = [
-    'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
-    'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    'https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2015/02/fairmont-banff-springs-hotel-alberta-e1424037962473.jpg?fit=970%2C546&ssl=1',
+    'https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/01/herbay.jpg?fit=1500%2C844&ssl=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/e6/1b/74/palm-meadows-club.jpg?w=1200&h=-1&s=1',
+    'https://www.oberoihotels.com/images/oberoihotels/exotic-vacations/ev-video-thumb.jpg',
+    'https://www.viceroybali.com/wp-content/uploads/2024/12/Most-Luxury-resorts-in-the-world-2-1024x577.png',
+    'https://media.cnn.com/api/v1/images/stellar/prod/171122165337-ultimate-india-hotels-wildflower-hall-shimla-in-the-himalayas-an-oberoi-resort.jpg?q=w_4500,h_3000,x_0,y_0,c_fill',
   ];
 
   return (
