@@ -1,4 +1,5 @@
 import GlobalSearchBox from 'components/global-search-box/GlobalSearchbox';
+import { Carousel } from 'components/ux/carousel';
 
 /**
  * HeroCover Component
@@ -31,11 +32,31 @@ const HeroCover = (props) => {
     locationTypeheadResults,
     setisDatePickerVisible,
   } = props;
+
+  // Sample images for the carousel - replace these with your actual hotel images
+  const heroImages = [
+    'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
+    'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  ];
+
   return (
-    <div className="bg-brand min-h-[400px] md:min-h-72 lg:min-h-60 text-slate-100">
-      <div className="hero-content__container flex flex-col items-center container mx-auto px-2 md:px-0">
-        <></>
-        <div className="hero-content__text py-4">
+    <div className="relative h-[400px] min-h-[400px] w-full text-slate-100 mb-8 overflow-hidden rounded-b-lg">
+      {/* Carousel Background */}
+      <div className="absolute inset-0 h-full w-full">
+        <Carousel 
+          images={heroImages}
+          autoPlay={true}
+          interval={5000}
+        />
+      </div>
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 h-full w-full bg-black/50" />
+      
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full container mx-auto px-2 md:px-0">
+        <div className="hero-content__text py-4 text-center">
           <h3 className="text-4xl font-medium">
             Discover your perfect stay around the globe
           </h3>
