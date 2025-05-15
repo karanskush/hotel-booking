@@ -1,4 +1,5 @@
 import GlobalSearchBox from 'components/global-search-box/GlobalSearchbox';
+import { Carousel } from 'components/ux/carousel';
 
 /**
  * HeroCover Component
@@ -31,11 +32,34 @@ const HeroCover = (props) => {
     locationTypeheadResults,
     setisDatePickerVisible,
   } = props;
+
+  // Sample images for the carousel - replace these with your actual hotel images
+  const heroImages = [
+    'https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2015/02/fairmont-banff-springs-hotel-alberta-e1424037962473.jpg?fit=970%2C546&ssl=1',
+    'https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/01/herbay.jpg?fit=1500%2C844&ssl=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/e6/1b/74/palm-meadows-club.jpg?w=1200&h=-1&s=1',
+    'https://www.oberoihotels.com/images/oberoihotels/exotic-vacations/ev-video-thumb.jpg',
+    'https://www.viceroybali.com/wp-content/uploads/2024/12/Most-Luxury-resorts-in-the-world-2-1024x577.png',
+    'https://media.cnn.com/api/v1/images/stellar/prod/171122165337-ultimate-india-hotels-wildflower-hall-shimla-in-the-himalayas-an-oberoi-resort.jpg?q=w_4500,h_3000,x_0,y_0,c_fill',
+  ];
+
   return (
-    <div className="bg-brand min-h-[400px] md:min-h-72 lg:min-h-60 text-slate-100">
-      <div className="hero-content__container flex flex-col items-center container mx-auto px-2 md:px-0">
-        <></>
-        <div className="hero-content__text py-4">
+    <div className="relative h-[400px] min-h-[400px] w-full text-slate-100 mb-8 overflow-hidden rounded-b-lg">
+      {/* Carousel Background */}
+      <div className="absolute inset-0 h-full w-full pointer-events-auto">
+        <Carousel 
+          images={heroImages}
+          autoPlay={true}
+          interval={5000}
+        />
+      </div>
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 h-full w-full bg-black/50 pointer-events-none" />
+      
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full container mx-auto px-2 md:px-0 pointer-events-auto">
+        <div className="hero-content__text py-4 text-center">
           <h3 className="text-4xl font-medium">
             Discover your perfect stay around the globe
           </h3>
