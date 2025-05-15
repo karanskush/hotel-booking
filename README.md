@@ -2,6 +2,12 @@
 
 Hotel Booking is a production-ready hotel booking website built with modern web technologies. It is designed to be a fully functional and responsive web application for hotel booking services. For the backend api checkout: [staybooker-express-api](https://github.com/iZooGooD/stay-booker-hotel-booking-express-api)
 
+## Added Features- Karan Singh
+
+- Added a responsive image carousel to the home page hero section.
+- Ensured the carousel does not overlap other sections & navigation buttons are interactive.
+- Maintained code quality and best practices.
+
 ## Key Features
 
 - **Production-Ready**: Crafted with production requirements in mind.
